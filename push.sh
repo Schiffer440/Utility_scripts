@@ -1,7 +1,7 @@
 #!/bin/bash
 
-
-git add *
+read -p "Wich file do you want to add (* for all):" files
+git add "$files"
 if [ $? -ne 0 ]
 then
     exit 1
