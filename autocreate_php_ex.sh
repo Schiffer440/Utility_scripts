@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 read -p "Nombre d'ex.php ? :" nb
 
 nb_de_fichier=$nb
