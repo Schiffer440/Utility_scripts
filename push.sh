@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 git add *
 if [ $? -ne 0 ]
 then
