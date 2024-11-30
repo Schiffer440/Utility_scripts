@@ -13,7 +13,7 @@ else
     then
         exit 1
     fi
-    read -p "Commit message:" message
+    read -e -p "Enter commit message(leave it blank for 'auto push'): " -i "auto push" message
     git commit -m "$message"
     git push
 fi
