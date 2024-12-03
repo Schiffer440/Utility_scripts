@@ -15,7 +15,6 @@
     UNDERLINE="\033[4m"
 
 read -p "Which file do you want to add (* for all):" files
-echo "read => $files"
 if [[ -z $files ]]
 then
     echo -e "${BOLD}${RED}No files requested, exiting...${DEF}"
