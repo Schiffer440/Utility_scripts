@@ -1,4 +1,3 @@
-# Utility_scripts
 <h1 align="center">
   <p>Bunch of script that do some automated tasks in the shell</p>
   <p>🚀</p>
