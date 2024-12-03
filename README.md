@@ -1,5 +1,5 @@
-# Utility_scripts
-<h1 align="center"> Bunch of script that do some automated task in the shell </h1>
+<h1 align="center"> # Utility_scripts
+ Bunch of script that do some automated task in the shell </h1>
 
 push.sh: Script Shell qui automatise les commandes git en demandant les fichiers et le message si ceux-ci sont valides.
 Il retourne un message d'erreur et arrête le script si aucun fichier n'est rentré et envoi le commit message "auto push"
