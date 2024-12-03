@@ -13,6 +13,7 @@
     BOLD="\033[1m"
     ITALIC="\033[3m"
     UNDERLINE="\033[4m"
+    coucou;
 
 read -p "Which file do you want to add (* for all):" files
 echo "read => $files"
