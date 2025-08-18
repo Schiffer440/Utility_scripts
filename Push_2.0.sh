@@ -21,6 +21,11 @@ msg=$(gum input --placeholder "Message de commit")|| {
   exit 1
 }
 
+# ----- Mise en majuscule de la première lettre -----
+feature="$(echo "${feature:0:1}" | tr '[:lower:]' '[:upper:]')${feature:1}"
+msg="$(echo "${msg:0:1}" | tr '[:lower:]' '[:upper:]')${msg:1}"
+
+
 # Git commands
 echo "$type($feature): $msg"
 git add .
