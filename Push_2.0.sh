@@ -1,13 +1,25 @@
 #!/bin/bash
 
 # Menu interactif
-type=$(gum choose "ADD" "FIX" "DELETE" "REFACTO")
+type=$(gum choose \
+  --cursor.foreground="#FF5733" \
+  --selected.foreground="212" \ 
+  "ADD" "FIX" "DELETE" "REFACTO")|| {
+  echo "❌ Commit annulé"
+  exit 1
+}
 
 # Demande de la fonctionnalité
-feature=$(gum input --placeholder "Sur quelle fonctionnalité travailles-tu ?")
+feature=$(gum input --placeholder "Sur quelle fonctionnalité travailles-tu ?")|| {
+  echo "❌ Commit annulé"
+  exit 1
+}
 
 # Demande du message de commit
-msg=$(gum input --placeholder "Message de commit")
+msg=$(gum input --placeholder "Message de commit")|| {
+  echo "❌ Commit annulé"
+  exit 1
+}
 
 # Git commands
 git add .
