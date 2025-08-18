@@ -27,3 +27,4 @@ git add .
 git commit -m "$type($feature): $msg"
 git push
 echo "✅ Commit et push effectués avec succès"
+
