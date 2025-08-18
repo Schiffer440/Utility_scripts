@@ -4,7 +4,7 @@
 type=$(gum choose \
   --cursor.foreground="#FF5733" \
   --selected.foreground="212" \
-  "ADD" "FIX" "DELETE" "REFACTO")|| {
+  "ADD" "FIX" "DELETE" "REFACTOR" "DOCS" "TEST")|| {
   echo "❌ Commit annulé"
   exit 1
 }
@@ -22,6 +22,8 @@ msg=$(gum input --placeholder "Message de commit")|| {
 }
 
 # Git commands
+echo "$type($feature): $msg"
 git add .
 git commit -m "$type($feature): $msg"
 git push
+echo "✅ Commit et push effectués avec succès"
