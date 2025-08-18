@@ -3,7 +3,7 @@
 # Menu interactif
 type=$(gum choose \
   --cursor.foreground="#FF5733" \
-  --selected.foreground="212" \ 
+  --selected.foreground="212" \
   "ADD" "FIX" "DELETE" "REFACTO")|| {
   echo "❌ Commit annulé"
   exit 1
